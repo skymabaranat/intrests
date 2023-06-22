@@ -1,11 +1,11 @@
-export default function Heading() {
+export default function Heading(props) {
   return (
     <figure class="text-center">
     <blockquote class="blockquote">
-        <p>A Website on our interests.</p>
+        <p style={{fontSize:'35px'}}>{props.title}</p>
       </blockquote>
       <figcaption class="blockquote-footer">
-      Ariana, Harkiran and Trevin  <cite title="Source Title">- Sky</cite>
+      {props.subheader}
   </figcaption>
 </figure>
   );
